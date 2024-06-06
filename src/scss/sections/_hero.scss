@@ -1,0 +1,82 @@
+.hero {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: center;
+  min-height: 60vh;
+  &-title {
+    color: var(--theme-color);
+    font-size: var(--tsm2);
+    font-family: var(--fira-code);
+  }
+  &-title-large {
+    font-size: var(--tgiant);
+    font-family: var(--raleway);
+    color: var(--light-slate);
+  }
+  &-title-sub {
+    color: var(--lightest-slate);
+  }
+  &-text {
+    color: var(--slate);
+    margin-right: 40%;
+    font-size: var(--tlarge);
+    letter-spacing: 0.07rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    font-family: var(--raleway);
+  }
+  &-button {
+    margin-top: 2rem;
+    .btn {
+      padding: 1rem 2rem;
+      font-size: var(--tsm1);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &-text {
+      width: 90%;
+    }
+  }
+}
+
+.hero-title-large {
+  font-size: 56px; /* Increased font size */
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Change font family as desired */
+  text-transform: uppercase; /* Uppercase text */
+  color: #ffffff; /* Default text color */
+  /* Add any other necessary styles to enhance beauty */
+  /* Enhanced hover effect */
+  transition: color 0.3s ease; /* Smooth color transition */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
+}
+
+.hero-title-large:hover {
+  color: #ff7f50; /* Change color on hover */
+}
+
+
+
+
+.hero {
+  font-size: 64px; /* Increased font size */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; /* Elegant font family */
+  text-transform: uppercase; /* Uppercase text */
+  color: #1a1a1a; /* Dark text color */
+  /* Add any other necessary styles */
+  /* Enhanced hover effect */
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Smooth color, scale, and text shadow transition */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for depth */
+}
+
+.hero:hover {
+  color: #ff6347; /* Change color on hover */
+  transform: scale(1); /* Scale up text on hover */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Increase text shadow on hover */
+}
